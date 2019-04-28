@@ -1,0 +1,17 @@
+digraph "prometheus::ClientMetric"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="prometheus::ClientMetric",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" histogram" ,fontname="Helvetica"];
+  Node2 [label="prometheus::ClientMetric\l::Histogram",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structprometheus_1_1ClientMetric_1_1Histogram.html"];
+  Node3 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" counter" ,fontname="Helvetica"];
+  Node3 [label="prometheus::ClientMetric\l::Counter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structprometheus_1_1ClientMetric_1_1Counter.html"];
+  Node4 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" untyped" ,fontname="Helvetica"];
+  Node4 [label="prometheus::ClientMetric\l::Untyped",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structprometheus_1_1ClientMetric_1_1Untyped.html"];
+  Node5 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" summary" ,fontname="Helvetica"];
+  Node5 [label="prometheus::ClientMetric\l::Summary",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structprometheus_1_1ClientMetric_1_1Summary.html"];
+  Node6 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" gauge" ,fontname="Helvetica"];
+  Node6 [label="prometheus::ClientMetric\l::Gauge",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$structprometheus_1_1ClientMetric_1_1Gauge.html"];
+}
